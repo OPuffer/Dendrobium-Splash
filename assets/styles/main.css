@@ -1,8 +1,15 @@
 :root{
-    --main-bg-color:#282c34;
+    /* --main-bg-color:#282c34;
     --darker-bg-color:#1f2329;
     --main-txt-color:#ececec;
+    --accent-txt-color:#39b906; 
+    --hero-color: rgb(121, 121, 120);*/
+
+    --main-bg-color:#fcfde6;
+    --darker-bg-color:#0c3f03;
+    --main-txt-color:#ececec;
     --accent-txt-color:#39b906;
+    --hero-color: #4b4b4b;
 }
 
 body{
@@ -34,7 +41,7 @@ body{
 }
 
 .topnav a:hover {
-    background-color: var(--main-txt-color);;
+    background-color: var(--accent-txt-color);
     color: var(--darker-bg-color);;
 }
   
@@ -48,9 +55,20 @@ body{
 }
 
 .hero{
-    background-color:rgb(121, 121, 120);
-    height:60vh;
-    /* position: relative; */
+    position: relative;
+    background-image:url("../images/rock-garden.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    max-height: 800px;
+    min-height: 640px;
+}
+.layer{
+    position: absolute;
+    height:100%;
+    width:100%;
+    background-color: rgba(9, 44, 2, 0.486);
+    
     display: flex;
     margin: auto;
     align-items:center;
@@ -58,5 +76,20 @@ body{
 }
 
 .header{
+    display: relative;
     text-align: center;
+}
+
+.btn-interest{
+    background-color: var( --darker-bg-color);
+    border: none;
+    border-radius: 5%;
+    color: var( --main-txt-color);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    
 }
