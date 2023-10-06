@@ -1,0 +1,63 @@
+:root{
+    --main-bg-color:#282c34;
+    --darker-bg-color:#1f2329;
+    --main-txt-color:#ececec;
+    --accent-txt-color:#39b906;
+}
+
+body{
+    margin:0;
+    padding:0;
+
+    font-family: 'Open Sans';
+    background-color: var(--main-bg-color);
+    color: var(--main-txt-color);
+}
+
+.topnav{
+    background-color: var(--darker-bg-color);
+    padding: 5px;
+    overflow: hidden;
+
+}
+.app-name{
+    color: var(--accent-txt-color);
+}
+  
+.topnav a {
+    float: left;
+    color: var(--main-txt-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: var(--main-txt-color);;
+    color: var(--darker-bg-color);;
+}
+  
+.topnav a.active {
+    background-color: var(--accent-txt-color);
+    /* #04AA6D; */
+    color: var(--main-txt-color);
+}
+
+.spacer{
+    height: 5vh;
+}
+
+.hero{
+    background-color:rgb(121, 121, 120);
+    height:60vh;
+    /* position: relative; */
+    display: flex;
+    margin: auto;
+    align-items:center;
+    justify-content:center;
+}
+
+.header{
+    text-align: center;
+}
