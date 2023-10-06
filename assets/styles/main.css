@@ -40,7 +40,6 @@ body{
   
 .topnav a.active {
     background-color: var(--accent-txt-color);
-    /* #04AA6D; */
     color: var(--main-txt-color);
 }
 
