@@ -1,13 +1,8 @@
 :root{
-    /* --main-bg-color:#282c34;
-    --darker-bg-color:#1f2329;
-    --main-txt-color:#ececec;
-    --accent-txt-color:#39b906; 
-    --hero-color: rgb(121, 121, 120);*/
-
     --main-bg-color:#fcfde6;
     --darker-bg-color:#0c3f03;
     --main-txt-color:#ececec;
+    --body-txt-color:#000000;
     --accent-txt-color:#39b906;
     --hero-color: #4b4b4b;
 }
@@ -15,7 +10,6 @@
 body{
     margin:0;
     padding:0;
-
     font-family: 'Open Sans';
     background-color: var(--main-bg-color);
     color: var(--main-txt-color);
@@ -56,13 +50,33 @@ body{
 
 .hero{
     position: relative;
-    background-image:url("../images/rock-garden.jpg");
     background-size: cover;
     width: 100%;
     height: 100%;
     max-height: 800px;
     min-height: 640px;
 }
+
+.garden-img{
+    background-image:url("../images/rock-garden.jpg");
+}
+.watering-img{
+    background-image:url("../images/watering.jpg");
+}
+.soil-img{
+    background-image:url("../images/soil.jpg");
+}
+
+.monstera-img{
+    background-image:url("../images/monstera.jpg");
+}
+.pots-img{
+    background-image:url("../images/pots.jpg");
+}
+.advice-img{
+    background-image:url("../images/advice.jpg");
+}
+
 .layer{
     position: absolute;
     height:100%;
@@ -90,6 +104,47 @@ body{
     text-decoration: none;
     display: inline-block;
     margin: 4px 2px;
-    cursor: pointer;
-    
+    cursor: pointer;   
+}
+
+.left{
+    margin-right:50%;
+    margin-left:10%;
+    text-align: left;
+}
+
+.right{
+    margin-left:30%;
+    text-align: left;
+}
+
+.details{
+    margin-top: 5%;
+    margin-left:10%;
+    margin-right:10%;
+    color: var(--main-txt-color);
+}
+
+.graphic{
+    margin-top: 0%;
+}
+.wrapper{
+    position: relative;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    max-height: 600px;
+    min-height: 400px;
+}
+
+.wrapper h3{
+    text-align: center;
+}
+.contents{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.contents p{
+    margin-top: 10%;
 }
